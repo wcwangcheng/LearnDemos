@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //创建li
+        window.onload=function(){
+            var obtn=document.getElementById('btn1');
+            var oul=document.getElementById('ull');
+            var otxt=document.getElementById('txt1');
+            obtn.onclick=function(){
+
+                var oLi=document.createElement('li');
+                oLi.innerHTML=otxt.value;
+                oul.appendChild(oLi)
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- 创建li标签 -->
+    <input type="text" id="txt1">
+    <input id="btn1" type="button" value="创建li">
+    <ul id="ull"></ul>
+<!-- 通过css选择器查找html元素 -->
+<h1>按查询器查找HTMl元素</h1>
+<p>你好世界</p>
+<p class='intro'>DOM很有用</p>
+<p class='intro'>案例演示querySelectorALL方法</p>
+<p id="demo"></p>
+<!-- 通过document.forms查找HTML元素 -->
+<h1>通过document.forms查找html元素</h1>
+<form id="frm1" action="">
+    First name: <input type="text" name="fname" value="Bill"><br>
+    Last name: <input type="text" name="lname" value="Gates"><br><br>
+    <input type="submit" value="提交">
+  </form> 
+  
+  <p>单击“试一试”按钮，显示表单中每个元素的值。</p>
+  
+  <button onclick="myFunction()">试一试</button>
+  
+  <p id="demo"></p>
+</body>
+<script>
+      //querySelectorAll()方法
+    var x=document.querySelectorAll('p.intro');
+    document.getElementById('demo').innerHTML='class="intro"的第一段（索引0）：'+x[0].innerHTML;
+//通过document.forms查找froms元素
+function myFunction() {
+  var x = document.forms["frm1"];
+  var text = "";
+  var i;
+  for (i = 0; i < x.length ;i++) {
+    text += x.elements[i].value + "<br>";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+
+</script>
+</html>

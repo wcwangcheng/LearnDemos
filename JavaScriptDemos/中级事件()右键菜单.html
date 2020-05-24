@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    #div1{
+        position: absolute;
+        width: 100px;
+        background: aqua;
+        border: 1px solid black ;
+        display: none;
+
+    }
+</style>
+<body>
+    <script>
+        document.oncontextmenu=function(ev){ 
+            var oEvent=ev||event;
+            var odiv=document.getElementById('div1');
+            odiv.style.display='block';
+            odiv.style.left=oEvent.clientX+'px'
+            odiv.style.top=oEvent.clientY+'px'
+            return false;
+        } 
+        document.onclick=function(){
+            var odiv=document.getElementById('div1');
+            odiv.style.display='none'
+        }
+    </script>
+    <div id="div1">
+        <ul>
+            <li>aaa</li>
+            <li>bbb</li>
+            <li>bbb</li>
+            <li>nnn</li>
+        </ul>
+    </div>
+</body>
+</html>

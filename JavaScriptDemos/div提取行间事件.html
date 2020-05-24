@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+    </head>
+    <script>
+        // 事件和其他属性一样，可以用js添加
+        // window.onload的意义:先加载其他代码，最后在运行window.onload函数内的代码，防止出错
+        // 行为(js)，样式(css)，结构（html）三者分离
+     window.onload=function(){
+         var oBtn=document.getElementById('btn1');
+         oBtn.onclick=function(){
+             alert('a');
+         }
+     }
+    </script>
+    <body>
+        <input  id="btn1" type="button" value="按钮1"/>
+      
+    </body>
+</html>

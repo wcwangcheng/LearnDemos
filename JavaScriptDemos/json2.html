@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var user={
+            "usercode":110,
+            "username":"张三",
+            "sex":true,
+            "adress":{
+                "city":"北京",
+                "street":"大兴区",
+                "zipcode":"74516230",
+            },
+            "aihao":["smoke","drink","tangtou"]
+
+        };
+        alert(user.username+'住在'+user.adress.city);
+        
+
+        // 设计JSON格式的数据，这个JSON格式的数据可以描述整个班级中每一个学生的信息，以及总人数信息
+        var students={
+            "total":3,
+            "students":[
+                {"name":"zhangsan","birth":"2010"},
+                {"name":"zhan","birth":"2010"},
+                {"name":"lisi","birth":"2010"}
+            ],
+        }
+
+    </script>
+</body>
+</html>
