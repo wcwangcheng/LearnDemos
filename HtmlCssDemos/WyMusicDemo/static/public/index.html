@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link rel="stylesheet" type="text/css" href="css/index.css" >
+    	<!-- 新 Bootstrap 核心 CSS 文件 -->
+	<link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 --> 
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	 
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Document</title>
+    <script>
+      window.onload=function(){
+      
+      
+
+}
+    </script>
+
+</head>
+<body>
+ 
+    <div id="container" style="width: 100%;">
+      <div id="header">
+       <span style=" color:ghostwhite ; font-size: 25px;float: left; position: absolute; left: 20%;">清风音乐</span>
+        <ul>
+           <li>发现音乐</li>
+           <li>我的音乐</li>
+           <li>朋友</li>
+           <li>商城</li>
+           <li>音乐人</li>
+           <li>下载客户端</li>
+       </ul>
+     
+   
+
+      </div>
+      <div id="daohang">
+        <ul>
+            <a href="success.html"><li>推荐 </li></a>
+            <li>排行榜</li>
+            <li>歌单</li>
+            <li>主播电台</li>
+            <li>歌手</li>
+            <li>新碟上架</li>
+        </ul>
+      </div>
+      <!-- 轮播图播放 -->
+      <div id="lunbo">
+       <div id="myCarousel" class="carousel slide">
+            <!-- 轮播（Carousel）指标  设计轮播图片计数器-->
+            <ol class="carousel-indicators"><!-- indicators 指示-->
+              <!-- •data-slide-to 属性：用来传递某个帧的下标，比如 data-slide-to="2"，可以直接跳转到这个指定的帧（下标从0开始计），同样定义在轮播图计数器的每个 li 上。
+          除了data-ride="carousel"、data-slide、data-slide-to 以外，轮播组件还支持其他三个自定义属性： -->
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>   
+            <!-- 轮播（Carousel）项目 设计轮播图片播放区，用carousel-inner样式控制 -->
+            <div class="carousel-inner">
+              <div class="item active" id="imgys" >
+                <img  src="http://p1.music.126.net/cIBLI0QLoRHBK4EnxvTGYw==/109951164887726320.jpg?imageView&amp;quality=89" alt="Second slide">
+              </div>
+              <div class="item" id="imgys">
+                <img src="http://p1.music.126.net/z0xzs8rFfBdJ2vx1Yf7jbw==/109951164885090268.jpg?imageView&amp;quality=89" alt="Second slide" >
+              </div>
+              <div class="item" id="imgys">
+                <img  src="http://p1.music.126.net/8d9bthb8ORGrcZCxJ2uPcA==/109951164886535977.jpg?imageView&amp;quality=89" alt="Second slide">
+              </div>
+              <div class="item" id="imgys">
+                <img src="http://p1.music.126.net/Edp1-hWduD-uVpA16B1eUA==/109951164887457010.jpg?imageView&amp;quality=89"  alt="Second slide">
+              </div>
+            </div>
+            <!-- 轮播（Carousel）导航 -- 向前播放（left carcousel-control）和向后播放的控制器-->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <!-- 图片轮播--声明式触轮播图的播放
+          
+          触发轮播图的播放方法也有两种，一种是声明式，另外一种是JavaScript方式。首先来看声明式方法。
+          声明式方法是通过定义 data 属性来实现，data 属性可以很容易地控制轮播的位置。其主要包括以下几种：
+          •data-ride 属性：取值 carousel，并且将其定义在 carousel 上。
+          
+          •data-target 属性：取值 carousel 定义的 ID 名或者其他样式识别符，如前面示例所示，取值为“#slidershow”，并且将其定义在轮播图计数器的每个 li 上。
+          
+          •data-slide 属性：取值包括 prev，next，prev表示向后滚动，next 表示向前滚动。该属性值同样定义在轮播图控制器的 a 链接上，同时设置控制器 href 值为容器 carousel 的 ID 名或其他样式识别符。
+           -->
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+           
+           </div>
+</div>
+
+
+
+
+
+
+<div id="music">
+<div class="lef">
+<ul id="daohul"> 
+  <span style="font-size: 20px; float: left;">热门推荐</span>
+<li><a href="">华语</a></li>
+<li><a href="">流行</a></li>
+<li><a href="">摇滚</a></li>
+<li><a href="">民谣</a></li>
+<li><a href="">电子</a></li>
+<span style="font-size: 10px; float: right;margin-top: 25px;"><a href="" style="color: red;">更多+</a></span>
+</ul>
+<hr style="border: red 2px solid; margin-top: 60px; width: 90%;">
+<div class="imgli">
+  <ul style="width: 100%;">
+  <li id="musi">
+    <span style="width: 140px; display: block;  position: absolute; top: 120px;background:rgba(0,0,0,0.4);">
+    <span class="glyphicon glyphicon-headphones" style="color: white;">15万</span>  <a href="#"><span class="glyphicon glyphicon-play-circle" style="float: right; color: white;"></span></a></span>
+    <img src="http://p1.music.126.net/Idf7H6VIgKb6SsEtSOIusw==/109951164715196683.jpg?param=140y140"><a href="">幸对清风皓月,苔茵展、云幕高张</a></li>
+  <li>
+    <span style="width: 140px; display: block;  position: absolute; top: 120px;background:rgba(0,0,0,0.4);">
+    <span class="glyphicon glyphicon-headphones" style="color: white;">10万</span>  <a href="#"><span class="glyphicon glyphicon-play-circle" style="float: right; color: white;"></span></a></span>
+    <img src="http://p2.music.126.net/u5DJF3Qse1nuviCadPys3A==/109951164843138404.jpg?param=140y140"><a href="">清风明月无人管,并作南楼一味凉</a></li>
+  <li>
+    <span style="width: 140px; display: block;  position: absolute; top: 120px;background:rgba(0,0,0,0.4);">
+    <span class="glyphicon glyphicon-headphones" style="color: white;">3万</span>  <a href="#"><span class="glyphicon glyphicon-play-circle" style="float: right; color: white;"></span></a></span>
+    <img src="http://p2.music.126.net/IEbHlywfrs3f7SITtLqdvA==/109951164617484350.jpg?param=140y140"><a href="">白露收残月,清风散晓霞</a></li>
+  <li>
+    <span style="width: 140px; display: block;  position: absolute; top: 120px;background:rgba(0,0,0,0.4);">
+    <span class="glyphicon glyphicon-headphones" style="color: white;">6万</span>  <a href="#"><span class="glyphicon glyphicon-play-circle" style="float: right; color: white;"></span></a></span>
+     <img src="http://p2.music.126.net/Rf976EbTTwCRpztbSwVF5g==/109951164353376358.jpg?param=140y140"><a>薄帷鉴明月,清风吹我襟</a></li> 
+  </ul>
+  <ul style="width: 100%;">
+    <li>
+      <span style="width: 140px; display: block;  position: absolute; top: 120px;background:rgba(0,0,0,0.4);">
+      <span class="glyphicon glyphicon-headphones" style="color: white;">12万</span>  <a href="#"><span class="glyphicon glyphicon-play-circle" style="float: right; color: white;"></span></a></span>
+      <img src="http://p2.music.126.net/KFnzNyrQsOqe3AMDahQItA==/109951164676708078.jpg?param=140y140"><a href="">幸对清风皓月,苔茵展、云幕高张</a></li>
+    <li> 
+      <span style="width: 140px; display: block;  position: absolute; top: 120px;background:rgba(0,0,0,0.4);">
+      <span class="glyphicon glyphicon-headphones" style="color: white;">8万</span>  <a href="#"><span class="glyphicon glyphicon-play-circle" style="float: right; color: white;"></span></a></span>
+      <img src="http://p2.music.126.net/YhxbSiQMewfDmav0JQKqIQ==/109951164876902181.jpg?param=140y140"><a href="">清风明月无人管,并作南楼一味凉</a></li>
+    <li>
+      <span style="width: 140px; display: block;  position: absolute; top: 120px;background:rgba(0,0,0,0.4);">
+      <span class="glyphicon glyphicon-headphones" style="color: white;">10万</span>  <a href="#"><span class="glyphicon glyphicon-play-circle" style="float: right; color: white;"></span></a></span>
+      <img src="http://p2.music.126.net/0LmABu_bQ_DwT064R_2mAw==/109951164447618525.jpg?param=140y140"><a href="">白露收残月,清风散晓霞</a></li>
+    <li>
+      <span style="width: 140px; display: block;  position: absolute; top: 120px;background:rgba(0,0,0,0.4);">
+      <span class="glyphicon glyphicon-headphones" style="color: white;">16万</span>  <a href="#"><span class="glyphicon glyphicon-play-circle" style="float: right; color: white;"></span></a></span>
+      <img src="http://p2.music.126.net/DC4H-eK9be06GOD5ybnnMQ==/109951164693503118.jpg?param=140y140"><a>薄帷鉴明月,清风吹我襟</a></li> 
+    <br>
+    </ul>
+</div>
+<ul id="daohul"> 
+  <span style="font-size: 20px; float: left;">新碟上架</span>
+
+<span style="font-size: 10px; float: right;margin-top: 25px;"><a href="" style="color: red;">更多+</a></span>
+</ul>
+<hr style="border: red 2px solid; margin-top: 60px; width: 90%;">
+<div class="imgli2">
+  <ul style="width: 100%;">
+  <li>
+    <span id="spanopen" class="glyphicon glyphicon-play" style="z-index: 9999;"></span>
+    <span id="spanclose" class="glyphicon glyphicon-pause" style="z-index: 9999; display: none;"></span>
+    <audio id="Msu"><source src="music/薛之谦 - 陪你去流浪.mp3" type="audio/mpeg"></audio>
+    <img id="zhuanimg"  src="http://p1.music.126.net/RbzjboFAEsGDyY43FND4MA==/109951164668566359.jpg?param=140y140"><a href="">陪你去流浪</a>
+</li>
+  <li><span id="spanope" class="glyphicon glyphicon-play" style="z-index: 9999;"></span><img id="zhuanim"  src="http://p2.music.126.net/yT8XIUfu3VBGpmD374clzQ==/109951164733050144.jpg?param=140y140"><a href="">爱你的歌</a></li>
+  <li><span id="spanop" class="glyphicon glyphicon-play" style="z-index: 9999;"></span><img id="zhuani"  src="http://p2.music.126.net/SyGHWwbbz5E0JCd1rlJ3qw==/109951164862864074.jpg?param=140y140"><a href="">晚间吹眠曲</a></li>
+  <li><span  id="spano" class="glyphicon glyphicon-play" style="z-index: 9999;"></span><img id="zhuan" src="http://p2.music.126.net/Nl4Mj9GtiLTHLM6T8HZsFA==/109951164832684224.jpg?param=140y140"><a>世界和你都很美</a></li> 
+  </ul>
+</div>
+<ul id="daohul"> 
+  <span style="font-size: 20px; float: left;">榜单</span>
+
+<span style="font-size: 10px; float: right;margin-top: 25px;"><a href="" style="color: red;">更多+</a></span>
+</ul>
+<hr style="border: red 2px solid; margin-top: 60px; width: 90%;">
+<div id="paihangbang">
+  <!-- 第一个排行榜 -->
+<div class="le">
+
+  <img style="margin-top: 15px; margin-left: 10px;" class="j-img" data-src="http://p4.music.126.net/DrRIg6CrgDfVLEph9SNh7w==/18696095720518497.jpg?param=100y100" 
+  src="http://p4.music.126.net/DrRIg6CrgDfVLEph9SNh7w==/18696095720518497.jpg?param=100y100"><span>清风音乐飙升榜</span>
+  <br>
+  <p>  
+    <ol>
+      <li>
+        <a href="#">小王日记</a>
+        <span id="tubiao">
+        <a href="#"><span class="glyphicon glyphicon-play-circle" style=" color: white;"></span></a> 
+      <a href="#">
+      <span class="glyphicon glyphicon-plus"></span>
+      </a>
+      <a href="#">
+        <span class="glyphicon glyphicon-check"></span>
+      </a>
+      </span>
+  </li>
+      <li>
+        <a href="#">像我这样的人</a>
+        <span id="tubiao">
+          <a href="#"><span class="glyphicon glyphicon-play-circle" style=" color: white;"></span></a> 
+        <a href="#">
+        <span class="glyphicon glyphicon-plus"></span>
+        </a>
+        <a href="#">
+          <span class="glyphicon glyphicon-check"></span>
+        </a>
+      </span>
+        
+    </li> 
+      <li>
+        <a href="#">消愁</a>
+        <span id="tubiao">
+          <a href="#"><span class="glyphicon glyphicon-play-circle" style=" color: white;"></span></a> 
+        <a href="#">
+        <span class="glyphicon glyphicon-plus"></span>
+        </a>
+        <a href="#">
+          <span class="glyphicon glyphicon-check"></span>
+        </a>
+      </span>
+      </li>
+      <li>
+        <a href="#">不染</a>
+        <span id="tubiao">
+          <a href="#"><span class="glyphicon glyphicon-play-circle" style=" color: white;"></span></a> 
+        <a href="#">
+        <span class="glyphicon glyphicon-plus"></span>
+        </a>
+        <a href="#">
+          <span class="glyphicon glyphicon-check"></span>
+        </a>
+      </span>
+      </li>
+      <li>
+        <a href="#">东北民谣</a>
+        <span id="tubiao">
+          <a href="#"><span class="glyphicon glyphicon-play-circle" style=" color: white;"></span></a> 
+        <a href="#">
+        <span class="glyphicon glyphicon-plus"></span>
+        </a>
+        <a href="#">
+          <span class="glyphicon glyphicon-check"></span>
+        </a>
+      </span>
+      </li>
+      <li>
+        <a href="#">深夜一角</a>
+        <span id="tubiao">
+          <a href="#"><span class="glyphicon glyphicon-play-circle" style=" color: white;"></span></a> 
+        <a href="#">
+        <span class="glyphicon glyphicon-plus"></span>
+        </a>
+        <a href="#">
+          <span class="glyphicon glyphicon-check"></span>
+        </a>
+      </span>
+      </li>
+      <li>
+        <a href="#">一荤一素</a>
+        <span id="tubiao">
+          <a href="#"><span class="glyphicon glyphicon-play-circle" style=" color: white;"></span></a> 
+        <a href="#">
+        <span class="glyphicon glyphicon-plus"></span>
+        </a>
+        <a href="#">
+          <span class="glyphicon glyphicon-check"></span>
+        </a>
+      </span>
+      </li>
+      <li>
+        <a href="#">借</a>
+        <span id="tubiao">
+          <a href="#"><span class="glyphicon glyphicon-play-circle" style=" color: white;"></span></a> 
+        <a href="#">
+        <span class="glyphicon glyphicon-plus"></span>
+        </a>
+        <a href="#">
+          <span class="glyphicon glyphicon-check"></span>
+        </a>
+      </span>
+      </li>
+  </ol>
+</p>
+
+</div>
+<!-- 第二个排行榜 -->
+<div class="cen">
+  <img style="margin-top: 15px; margin-left: 10px;" class="j-img" data-src="http://p3.music.126.net/N2HO5xfYEqyQ8q6oxCw8IQ==/18713687906568048.jpg?param=100y100"
+   src="http://p3.music.126.net/N2HO5xfYEqyQ8q6oxCw8IQ==/18713687906568048.jpg?param=100y100"><span>清风音乐原创榜</span>
+   <br>
+   <p>
+     <ol>
+       <li>
+        <a href="#">配合<audio id="myAudio"><source src="music/peih.mp3" type="audio/mpeg">您的浏览器不支持 audio 与元素。</audio></a>
+        <span id="tubiao">
+          <a href="#" onclick="playAudio()"><span class="glyphicon glyphicon-play-circle" style=" color: white;" ></span></a> 
+        <a href="#">
+        <span class="glyphicon glyphicon-plus"></span>
+        </a>
+        <a href="#">
+          <span class="glyphicon glyphicon-check"></span>
+        </a>
+        </span>
+       </li>
+       <li>
+        <a href="#">演员<audio id="myAudi"><source src="music/薛之谦 - 演员.mp3" type="audio/mpeg">您的浏览器不支持 audio 与元素。</audio></a>
+        <span id="tubiao">
+          <a href="#" id="x2"><span class="glyphicon glyphicon-play-circle" style=" color: white;"></span></a> 
+        <a href="#">
+        <span class="glyphicon glyphicon-plus"></span>
+        </a>
+        <a href="#">
+          <span class="glyphicon glyphicon-check"></span>
+        </a>
+        </span>
+       </li> 
+       <li>
+        <a href="#">陪我去流浪</a>
+        <span id="tubiao">
+          <a href="#"><span class="glyphicon glyphicon-play-circle" style=" color: white;"></span></a> 
+        <a href="#">
+        <span class="glyphicon glyphicon-plus"></span>
+        </a>
+        <a href="#">
+          <span class="glyphicon glyphicon-check"></span>
+        </a>
+        </span>
+       </li>
+       <li>
+        <a href="#">刚刚好</a>
+        <span id="tubiao">
+          <a href="#"><span class="glyphicon glyphicon-play-circle" style=" color: white;"></span></a> 
+        <a href="#">
+        <span class="glyphicon glyphicon-plus"></span>
+        </a>
+        <a href="#">
+          <span class="glyphicon glyphicon-check"></span>
+        </a>
+        </span>
+       </li>
+       <li>
+        <a href="#">唱不完的歌</a>
+        <span id="tubiao">
+          <a href="#"><span class="glyphicon glyphicon-play-circle" style=" color: white;"></span></a> 
+        <a href="#">
+        <span class="glyphicon glyphicon-plus"></span>
+        </a>
+        <a href="#">
+          <span class="glyphicon glyphicon-check"></span>
+        </a>
+        </span>
+       </li>
+       <li>
+        <a href="#">你还要我怎样</a>
+        <span id="tubiao">
+          <a href="#"><span class="glyphicon glyphicon-play-circle" style=" color: white;"></span></a> 
+        <a href="#">
+        <span class="glyphicon glyphicon-plus"></span>
+        </a>
+        <a href="#">
+          <span class="glyphicon glyphicon-check"></span>
+        </a>
+        </span>
+       </li>
+       <li>
+        <a href="#">带病旅行</a>
+        <span id="tubiao">
+          <a href="#"><span class="glyphicon glyphicon-play-circle" style=" color: white;"></span></a> 
+        <a href="#">
+        <span class="glyphicon glyphicon-plus"></span>
+        </a>
+        <a href="#">
+          <span class="glyphicon glyphicon-check"></span>
+        </a>
+        </span>
+       </li>
+       <li>
+        <a href="#">无悔这一生</a>
+        <span id="tubiao">
+          <a href="#"><span class="glyphicon glyphicon-play-circle" style=" color: white;"></span></a> 
+        <a href="#">
+        <span class="glyphicon glyphicon-plus"></span>
+        </a>
+        <a href="#">
+          <span class="glyphicon glyphicon-check"></span>
+        </a>
+        </span>
+       </li>
+   </ol>
+  </p>
+   
+</div>
+<!-- 第三个排行榜 -->
+<div class="ri">
+  <img style="margin-top: 15px; margin-left: 10px;" class="j-img" data-src="http://p4.music.126.net/sBzD11nforcuh1jdLSgX7g==/18740076185638788.jpg?param=100y100"
+   src="http://p4.music.126.net/sBzD11nforcuh1jdLSgX7g==/18740076185638788.jpg?param=100y100"><span>清风音乐新歌榜</span>
+   <p>
+     <ol>
+       <li> 
+        <a href="#">平凡天使</a>
+         <span id="tubiao">
+        <a href="#"><span class="glyphicon glyphicon-play-circle" style=" color: white;"></span></a> 
+      <a href="#">
+      <span class="glyphicon glyphicon-plus"></span>
+      </a>
+      <a href="#">
+        <span class="glyphicon glyphicon-check"></span>
+      </a>
+      </span>
+    </li>
+       <li>
+         
+        <a href="#">新世界</a>
+        <span id="tubiao">
+          <a href="#"><span class="glyphicon glyphicon-play-circle" style=" color: white;"></span></a> 
+        <a href="#">
+        <span class="glyphicon glyphicon-plus"></span>
+        </a>
+        <a href="#">
+          <span class="glyphicon glyphicon-check"></span>
+        </a>
+        </span>
+       </li> 
+       <li>
+        <a href="#">好想爱这个世界</a>
+        <span id="tubiao">
+          <a href="#"><span class="glyphicon glyphicon-play-circle" style=" color: white;"></span></a> 
+        <a href="#">
+        <span class="glyphicon glyphicon-plus"></span>
+        </a>
+        <a href="#">
+          <span class="glyphicon glyphicon-check"></span>
+        </a>
+        </span>
+       </li>
+       <li>
+        <a href="#">微微</a>
+        <span id="tubiao">
+          <a href="#"><span class="glyphicon glyphicon-play-circle" style=" color: white;"></span></a> 
+        <a href="#">
+        <span class="glyphicon glyphicon-plus"></span>
+        </a>
+        <a href="#">
+          <span class="glyphicon glyphicon-check"></span>
+        </a>
+        </span>
+       </li>
+       <li>
+        <a href="#">你最近好吗</a>
+        <span id="tubiao">
+          <a href="#"><span class="glyphicon glyphicon-play-circle" style=" color: white;"></span></a> 
+        <a href="#">
+        <span class="glyphicon glyphicon-plus"></span>
+        </a>
+        <a href="#">
+          <span class="glyphicon glyphicon-check"></span>
+        </a>
+        </span>
+       </li>
+       <li>
+        <a href="#">达拉崩吧</a>
+        <span id="tubiao">
+          <a href="#"><span class="glyphicon glyphicon-play-circle" style=" color: white;"></span></a> 
+        <a href="#">
+        <span class="glyphicon glyphicon-plus"></span>
+        </a>
+        <a href="#">
+          <span class="glyphicon glyphicon-check"></span>
+        </a>
+        </span>
+       </li>
+       <li>
+        <a href="#">天下</a>
+        <span id="tubiao">
+          <a href="#"><span class="glyphicon glyphicon-play-circle" style=" color: white;"></span></a> 
+        <a href="#">
+        <span class="glyphicon glyphicon-plus"></span>
+        </a>
+        <a href="#">
+          <span class="glyphicon glyphicon-check"></span>
+        </a>
+        </span>
+       </li>
+       <li>
+        <a href="#">雪花落下</a>
+        <span id="tubiao">
+          <a href="#"><span class="glyphicon glyphicon-play-circle" style=" color: white;"></span></a> 
+        <a href="#">
+        <span class="glyphicon glyphicon-plus"></span>
+        </a>
+        <a href="#">
+          <span class="glyphicon glyphicon-check"></span>
+        </a>
+        </span>
+       </li>
+   </ol>
+  </p>
+
+</div>
+</div>
+
+
+
+    
+</div>
+<!-- 右侧登录注册导航 -->
+<div class="rig">
+<a style="text-align: center; margin-left: 5px;margin-top: 10px; display: block;">清风音乐，让清风洗涤你的灵魂</a>
+<br>
+<button type="button" class="btn btn-danger" style="margin-left: 30%;"><a data-toggle="modal" data-target="#login" href=""><span class="glyphicon glyphicon-log-in"></span>用户登录</a></button>
+<button type="button" class="btn btn-danger" style="margin-left: 30%; margin-top: 10px;"><a data-toggle="modal" data-target="#register" href=""><span class="glyphicon glyphicon-user"></span> 用户注册</a>
+</div></button>
+</div>
+    </div> 
+    
+   <!-- 注册窗口 -->
+   <div id="register" class="modal fade" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content" style="width: 500px; height: 200px;">
+            <div class="modal-body">
+              <span><strong>用户注册</strong></span>
+                <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" >
+                <form class="form-group" style="width: 50%; margin-left: 25%;" action="">
+                        <div class="form-group">
+                            <label for="">请输入手机号</label>
+                            <input class="form-control" type="text" placeholder="11位手机号码">
+                        </div>
+                        <div class="form-group">
+                            <label for="">密码</label>
+                            <input class="form-control" type="password" placeholder="至少6位字母或数字">
+                        </div>
+                       
+                        <div class="text-center">
+                            <button class="btn btn-primary" type="submit">提交</button>
+                            <button class="btn btn-danger" data-dismiss="modal">取消</button>
+                        </div>
+                        <a href="" data-toggle="modal" data-dismiss="modal" data-target="#login">已有账号？点我登录</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- 登录窗口 -->
+    <div id="login" class="modal fade">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-body">
+                  <span><strong>用户登录</strong></span>
+                  <button class="close" data-dismiss="modal">
+                      <span>&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body" >
+                  <form class="form-group" style="width: 50%; margin-left: 25%;" action=""> 
+                          <div class="form-group">
+                              <label for="">用户名</label>
+                              <input class="form-control" id="username"  type="text" placeholder="请输入用户名">
+                          </div>
+                          <div class="form-group">
+                              <label for="">密码</label>
+                              <input class="form-control" id="pswd" type="password" placeholder="请输入密码">
+                          </div>
+                          <div class="text-center">
+                              <button class="btn btn-primary" onclick="login()" type="submit">登录</button>
+                              <button class="btn btn-danger" data-dismiss="modal">取消</button>
+                          </div>
+                          <a href="" data-toggle="modal" data-dismiss="modal" data-target="#register">还没有账号？点我注册</a>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+ 
+<script>
+  //点击播放音乐
+  var x = document.getElementById("myAudio"); 
+  var myAudi = document.getElementById("myAudi"); 
+  var x2=document.getElementById("x2");
+  
+  function playAudio()
+  { 
+      x.play(); 
+  } 
+  x2.onclick=function(){
+      myAudi.play();
+  }
+  
+  function pauseAudio()
+  { 
+    x.pause(); 
+  } 
+  //点击播放新歌上架的音乐，同时完成图片旋转！
+      var rotateVal = 0 // 旋转角度
+			var InterVal // 定时器
+			window.onload = function () {
+			        	//获得open/close/Mus按钮的id
+                var spanopen=document.getElementById('spanopen')
+                var spanclose=document.getElementById('spanclose')
+                var MUS=document.getElementById('Msu')
+                //给open按钮设置一个点击事件
+                spanopen.onclick=function(){
+                    //执行旋转函数
+                      rotate()
+                      MUS.play();
+                      spanopen.style.display='none';
+                      spanclose.style.display='inline-block';
+                      
+                      event.stopPropagation();
+                }
+			        	spanclose.onclick = function () {
+				           //清除定时器
+                   clearInterval(InterVal)
+                   spanclose.style.display='none';
+                   spanopen.style.display='inline-block';
+                   MUS.pause();
+				}
+			}
+			// 设置定时器
+			function rotate () {
+				InterVal = setInterval(function () {
+					var img = document.getElementById('zhuanimg')
+					rotateVal += 1
+					// 设置旋转属性(顺时针)
+					img.style.transform = 'rotate(' + rotateVal + 'deg)'
+					// 设置旋转属性(逆时针)
+					//img.style.transform = 'rotate(-' + rotateVal + 'deg)'
+					// 设置旋转时的动画  匀速0.1s
+					img.style.transition = '0.1s linear'
+				}, 100)
+			}
+
+
+      function login(){
+
+  localStorage.removeItem("isLogin");
+  var url = "https://www.liulongbin.top:8888/api/private/v1/login";
+  var data = {
+    username: $("#username").val(),
+    password: $("#pswd").val(),
+    // platform: 'HTML5',
+  };
+  $.ajax({
+    type: "post",
+    async: false,  //同步请求
+    url: url,
+    data: data,
+    timeout: 1000,
+    success: function (dates) {
+      console.log(dates);
+      if (dates.meta.status == 200) {
+        window.sessionStorage.setItem("username", dates.username);
+        window.sessionStorage.setItem("account", dates.account);
+        window.sessionStorage.setItem("access_token", dates.access_token);
+        window.sessionStorage.setItem("user_token", dates.user_token);
+        window.location.href = 'success.html';
+       
+
+        if ($("input[type='checkbox']").prop('checked') == false) {
+          localStorage.setItem('rememberPwd', JSON.stringify({ userName: $('#username').val(), pwd: '' }));
+        } else {
+          if ($('#username').val() != "" && $('#pswd').val() != "") {
+            localStorage.setItem('rememberPwd', JSON.stringify({ userName: $('#username').val(), pwd: $('#pswd').val() }));
+            // alert('执行到此处')
+            // // console.log('ghjkl');
+            
+            // console.log(userInfo.userName);
+        
+         
+            
+          }
+        }
+      } else {
+        alert('账号或密码错误，请重新输入');
+      }
+    },
+    error: function (err) {
+      alert(err);
+    }
+  });
+
+      }
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,243 @@
+#header{
+    width: 100%;
+    height: 80px;
+  
+    background:black;
+    position: relative;
+
+}
+
+
+#header ul{
+    line-height: 80px;
+    margin-left: 28%;
+    min-width: 1200px;
+  
+}
+#header ul li{
+    float: left;
+    width: 100px;
+    line-height: 80px;
+    text-align: center;
+    list-style: none;
+    color: linen;
+}
+#header ul li:hover{
+         background: gold;
+        
+}
+#txt{
+    border-radius: 15px; 
+    height: 20px;
+    width: 100px;
+    position: absolute;
+    top: 22px;
+    left: 65%;
+}
+#btn{
+    position: absolute;
+    border-radius: 10px;
+    color: ghostwhite;
+    background: black;
+    border: linen solid 1px;
+    top: 24px;
+    left: 72%;
+}
+#daohang{
+    width: 100%;
+    height: 40px;
+  
+    background: red;
+}
+#daohang ul{
+  
+    position: absolute;
+    left: 28%;
+}
+#daohang ul li{
+    float: left;
+    width: 100px;
+    line-height: 40px;
+    text-align: center;
+    list-style: none;
+    color: linen;
+}
+#daohang ul li:hover{
+    background: gold;
+}
+#lunbo{
+    width: 100%;
+    min-width: 1560px;
+    height: 343px;
+    background: blanchedalmond;
+}
+#lunbo img{
+    width: 980px;
+    height: 343px;
+}
+#music{
+    width: 970px;
+    height: 1200px;
+    margin-left: 24.5%;
+    border: black solid 1px;
+}
+#imgys{
+    text-align: center;
+}
+#imgys img{
+    display: inline-block;
+     width: 51%;
+     height: 343px;
+  
+}
+.lef{
+    float: left;
+ 
+    width: 720px;
+    height: 1200px;
+}
+.rig{
+    float: right;
+    width: 240px;
+    height: 1200px;
+    border-left: black 1px solid;
+}
+#daohul{
+    margin-top: 10px;
+    width: 90%;
+}
+#daohul li{
+    float: left;
+    width: 50px;
+    line-height: 15px;
+    margin-top: 20px;
+    text-align: center;
+    border-right: black 1px solid;
+    font-size: 10px;
+    list-style: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+}
+.imgli{
+    width: 90%;
+
+   
+}
+.imgli ul li{
+    float: left;
+    margin-left: 15px;
+    list-style: none;
+    width: 135px;
+    position: relative;
+    
+    
+}
+.imgli2{
+    width: 92%;
+}
+.imgli2 ul{
+    width: 90%;
+    margin-left: 4%;
+    border:black 1px solid;
+    height: 180px;
+    background: darkgrey;
+   
+}
+
+.imgli2 ul li{
+    float: left;
+    margin-left: 10px;
+    list-style: none;
+    width: 135px; 
+    height: 180px;  
+    text-align: center;
+    position: relative;
+   
+}
+.imgli2 ul li span{
+    display: block;
+    line-height: 180px;
+    left: 60px;
+    position: absolute;
+    color: ghostwhite;
+}
+.imgli2 ul li img{
+    margin-top: 5%;
+    border-radius: 50%;
+    /* animation: rotate 6s linear infinite; */
+}
+ @keyframes rotate{
+	0%{
+		transform: rotateZ(0deg);/*从0度开始*/
+	}
+	100%{
+		transform: rotateZ(360deg);/*360度结束*/
+	}
+} 
+
+#paihangbang{
+    width: 90%;
+    height: 380px;
+    margin-left: 5%;
+    border: solid 1px black;
+
+
+
+}
+
+.le{
+    float: left;
+    width: 33%;
+    height: 380px;
+    border-right: solid 1px black;
+ 
+
+
+
+}  
+
+.cen{
+    float: left;
+    width: 34%;
+    height: 380px;
+    border-right: solid 1px black;
+}
+.ri{
+    float: right;
+    width: 33%;
+    height: 380px;
+
+}
+ol li:nth-child(even) {
+    background: mediumturquoise;
+}
+
+ol li:nth-child(odd) {
+
+background: skyblue;
+} 
+ol li{
+    height: 30px;
+    line-height: 30px;
+}
+ol li span{
+    display: none;
+}
+ol li:hover span{
+    display: inline;
+   
+  }
+   /* -n + 5 就是选择前面5个  */   
+   ol li:nth-child(-n+3) {
+    color: red;
+}
+#tubiao{
+    float: right;
+
+
+}
+.modal-body{
+    background: burlywood;
+}
