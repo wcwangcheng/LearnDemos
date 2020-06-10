@@ -1,0 +1,100 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #333;
+}
+.header{
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    color: white;
+    line-height: 40px;
+}
+.nav span:nth-child(1){
+    padding-left: 20%;
+}
+.nav span:nth-child(2){
+    padding-left: 55%;
+}
+.nav-1{
+    width: 100%;
+    height: 80px;
+    color: red;
+    background-color:#f9f9f9;
+}
+.title{
+    font-size: 25px;
+    padding-left: 19%;
+    height: 80;
+    line-height: 80px;
+    float: left;
+}
+.title-phone{
+    padding-left: 72%;
+}
+.article{
+    clear: both;
+    width: 100%;
+    min-width: 1400px;
+    height: 87%;
+    background-color: #f9f9f9;
+}
+.section{
+    width: 800px;
+    height: 500px; 
+    float: left;
+    margin-left: 20%;
+    margin-top: 80px;
+    border: 1px solid black;
+   
+}
+.font{
+    width: 200px;
+    height: 500px;
+    margin-top: 80px;
+    float: left;
+    margin-left: 3%;
+}
+.caozuo{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.btn1{
+            background: red; 
+            width: 110px; 
+            height: 30px;
+            color: white;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 20px;
+            border: 0;  
+            outline: none;
+            cursor: pointer;
+}
+.btn2{
+            background: red; 
+            width: 238px; 
+            height: 30px;
+            color: white;
+            border-radius: 5px;
+            text-align: center;
+            margin-left: 205px;
+            margin-top:170px;
+            border: 0;  
+            outline: none;
+            cursor: pointer;
+}
+label{
+    margin-left: 120px;
+   
+}
+.font span{
+margin-left: 5px;
+}
+p{
+    margin-top: 50px;
+}
